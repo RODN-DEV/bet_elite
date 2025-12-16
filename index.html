@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Betting Tips - Daily Odds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button id="close-btn" class="close-btn"><i class="fas fa-times"></i> Close</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#history-tab" class="nav-item">History</a>
+            <a href="#" id="telegram-link" class="nav-item telegram-channel">
+                <i class="fab fa-telegram-plane"></i> Join Telegram Channel
+            </a>
+            <a href="#privacy-policy" class="nav-item">Privacy Policy</a>
+        </nav>
+    </div>
+
+    <div id="main-content">
+        <header>
+            <button id="hamburger-btn" class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1>Elite Tips</h1>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-button active" data-section="vip-5-odds">5 Odds VIP</button>
+            <button class="tab-button" data-section="vip-3-odds">3 Odds VIP</button>
+            <button class="tab-button" data-section="free-section">Free Tips</button>
+            <button class="tab-button" data-section="history-tab">History</button>
+        </nav>
+
+        <main class="content-container">
+
+            <section id="tips-section">
+                <div id="vip-5-odds" class="tips-content active">
+                    <h2>⭐ 5 Odds Daily VIP</h2>
+                    <div class="games-list">
+                        </div>
+                </div>
+
+                <div id="vip-3-odds" class="tips-content hidden">
+                    <h2>✨ 3 Odds Daily VIP</h2>
+                    <div class="games-list">
+                        </div>
+                </div>
+
+                <div id="free-section" class="tips-content hidden">
+                    <h2>💸 Free Section</h2>
+                    <div class="games-list">
+                        </div>
+                </div>
+            </section>
+
+            <section id="history-tab" class="hidden">
+                <h2>📊 Betting History</h2>
+                <div id="history-list">
+                    </div>
+            </section>
+            
+            <section id="privacy-policy" class="hidden">
+                <h2>🔒 Privacy Policy</h2>
+                <p>Your privacy is important to us. This application does not collect any personal data. All tips are for entertainment and informational purposes only.</p>
+                <p>We do not guarantee the accuracy of any tips provided.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="history.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
